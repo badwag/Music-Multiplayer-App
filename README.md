@@ -1,4 +1,2 @@
-badwag.github.io
+Music Multiplayer App
 ================
-
-BadWag Website Code
