@@ -1,7 +1,7 @@
-window.addEventListener("keydown", checkKeyPressed, false);
- 
-function checkKeyPressed(e) {
-    if (e.keyCode == "65") {
-        alert("The 'a' key is pressed.");
+document.onkeypress = function(e) {
+    e = e || window.event;
+    var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+    if (charCode && String.fromCharCode(charCode) == "a") {
+        alert("Hey Cam, check out this A!");
     }
-}
+};
